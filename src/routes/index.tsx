@@ -21,6 +21,8 @@ const projects = [
   { name: "my-repo", desc: "App de citas: gestión de reservas y agenda.", tags: ["JavaScript", "PHP", "MySQL"] },
   { name: "Base-de-datos", desc: "Diseño y gestión de bases de datos relacionales.", tags: ["MySQL", "HTML"] },
   { name: "Albaaaaa.github.io", desc: "Mi portfolio profesional publicado en GitHub Pages.", tags: ["HTML", "CSS"] },
+  { name: "proyecto-html", desc: "Mi primer proyecto en HTML: donde empezó todo.", tags: ["HTML"] },
+  { name: "Readme", desc: "Perfil de GitHub y presentación personal.", tags: ["Markdown"] },
 ];
 
 const stack = ["HTML5", "CSS3", "JavaScript", "PHP", "MySQL", "Git", "GitHub Pages", "Diseño responsive"];
@@ -99,7 +101,7 @@ function Index() {
         {/* Projects */}
         {projects.map((p, i) => (
           <a key={p.name} href={`${GITHUB}/${p.name}`} target="_blank" rel="noreferrer"
-            className={`bento animate-rise group flex flex-col justify-between ${i === 0 ? "md:col-span-4" : i === 1 ? "md:col-span-2" : "md:col-span-3"}`}
+            className={`bento animate-rise group flex flex-col justify-between ${i === 0 ? "md:col-span-4" : i === 1 ? "md:col-span-2" : "md:col-span-2"}`}
             style={delay(5 + i)}>
             <div className="flex items-start justify-between">
               <p className="font-mono text-xs text-muted-foreground">repo / {String(i + 1).padStart(2, "0")}</p>
@@ -114,6 +116,16 @@ function Index() {
             </div>
           </a>
         ))}
+
+        {/* Private */}
+        <section className="bento animate-rise md:col-span-6 flex flex-col justify-between gap-4 md:flex-row md:items-center" style={delay(11)}>
+          <div>
+            <p className="font-mono text-xs text-muted-foreground">🔒 repositorios privados</p>
+            <h2 className="mt-2 font-display text-3xl">Y más proyectos en privado</h2>
+            <p className="mt-2 max-w-xl text-sm text-muted-foreground">Además de los 6 públicos, trabajo en repositorios privados para clientes y proyectos en desarrollo. Escríbeme y te los enseño.</p>
+          </div>
+          <a href="mailto:albasierod@gmail.com" className="shrink-0 rounded-full border px-6 py-3 transition hover:border-primary">Solicitar acceso</a>
+        </section>
 
         {/* CTA */}
         <section className="animate-rise md:col-span-6 rounded-[var(--radius-2xl)] bg-gradient-mint p-10 text-primary-foreground" style={delay(9)}>
