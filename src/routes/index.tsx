@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 
 const GITHUB = "https://github.com/Albaaaaa";
 
@@ -118,7 +118,7 @@ function Index() {
         ))}
 
         {/* Lovable senior portfolio */}
-        <a href="https://id-preview--bf6c441b-b510-4f81-864d-ca86fe0fe61f.lovable.app" target="_blank" rel="noreferrer" className="bento animate-rise group md:col-span-6 flex flex-col justify-between gap-4 md:flex-row md:items-center" style={delay(10)}>
+        <Link to="/senior" className="bento animate-rise group md:col-span-6 flex flex-col justify-between gap-4 md:flex-row md:items-center" style={delay(10)}>
           <div>
             <p className="font-mono text-xs text-accent">✦ nuevo · programado con IA</p>
             <h2 className="mt-2 font-display text-3xl transition group-hover:text-primary">ia-senior-portfolio <span className="inline-block transition group-hover:translate-x-1">↗</span></h2>
@@ -128,7 +128,7 @@ function Index() {
             </div>
           </div>
           <span className="shrink-0 rounded-full bg-gradient-mint px-6 py-3 font-medium text-primary-foreground">Ver web IA senior</span>
-        </a>
+        </Link>
 
         {/* Private */}
         <section className="bento animate-rise md:col-span-6 flex flex-col justify-between gap-4 md:flex-row md:items-center" style={delay(11)}>
