@@ -117,6 +117,19 @@ function Index() {
           </a>
         ))}
 
+        {/* Lovable senior portfolio */}
+        <a href="https://id-preview--bf6c441b-b510-4f81-864d-ca86fe0fe61f.lovable.app" target="_blank" rel="noreferrer" className="bento animate-rise group md:col-span-6 flex flex-col justify-between gap-4 md:flex-row md:items-center" style={delay(10)}>
+          <div>
+            <p className="font-mono text-xs text-accent">✦ nuevo · creado con Lovable</p>
+            <h2 className="mt-2 font-display text-3xl transition group-hover:text-primary">portfolio-senior <span className="inline-block transition group-hover:translate-x-1">↗</span></h2>
+            <p className="mt-2 max-w-xl text-sm text-muted-foreground">La evolución de Albaaaaa.github.io: portfolio senior con diseño bento, animaciones y React + TypeScript.</p>
+            <div className="mt-3 flex flex-wrap gap-2">
+              {["React", "TypeScript", "Tailwind", "Lovable"].map((t) => <span key={t} className="font-mono text-xs text-accent">#{t}</span>)}
+            </div>
+          </div>
+          <span className="shrink-0 rounded-full bg-gradient-mint px-6 py-3 font-medium text-primary-foreground">Ver web</span>
+        </a>
+
         {/* Private */}
         <section className="bento animate-rise md:col-span-6 flex flex-col justify-between gap-4 md:flex-row md:items-center" style={delay(11)}>
           <div>
