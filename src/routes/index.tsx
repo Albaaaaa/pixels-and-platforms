@@ -56,8 +56,8 @@ function Index() {
             <a href={GITHUB} target="_blank" rel="noreferrer" className="rounded-full bg-gradient-mint px-6 py-3 font-medium text-primary-foreground shadow-[var(--shadow-glow)] transition hover:scale-105">
               Ver repositorios
             </a>
-            <a href="https://serprofes.es" target="_blank" rel="noreferrer" className="rounded-full border px-6 py-3 transition hover:border-primary">
-              serprofes.es
+            <a href="mailto:albasierod@gmail.com" className="rounded-full border px-6 py-3 transition hover:border-primary">
+              Contactar
             </a>
           </div>
         </section>
@@ -119,6 +119,7 @@ function Index() {
         <section className="animate-rise md:col-span-6 rounded-[var(--radius-2xl)] bg-gradient-mint p-10 text-primary-foreground" style={delay(9)}>
           <h2 className="font-display text-4xl md:text-6xl">¿Construimos algo <em>increíble</em>?</h2>
           <div className="mt-6 flex flex-wrap gap-4 font-mono text-sm">
+            <a href="mailto:albasierod@gmail.com" className="underline-offset-4 hover:underline">albasierod@gmail.com</a>
             <a href="https://serprofes.es" target="_blank" rel="noreferrer" className="underline-offset-4 hover:underline">serprofes.es ↗</a>
             <a href={GITHUB} target="_blank" rel="noreferrer" className="underline-offset-4 hover:underline">GitHub ↗</a>
           </div>
