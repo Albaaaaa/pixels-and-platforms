@@ -25,7 +25,7 @@ const projects = [
   { name: "Readme", desc: "Perfil de GitHub y presentación personal.", tags: ["Markdown"] },
 ];
 
-const stack = ["HTML5", "CSS3", "JavaScript", "PHP", "MySQL", "Git", "GitHub Pages", "Diseño responsive"];
+const stack = ["HTML5", "CSS3", "JavaScript", "PHP", "MySQL", "Git", "GitHub Pages", "Diseño responsive", "IA generativa", "Lovable", "Prompt Engineering"];
 
 const delay = (i: number) => ({ animationDelay: `${i * 80}ms` });
 
@@ -48,10 +48,10 @@ function Index() {
           <div className="mt-10">
             <h1 className="font-display text-5xl leading-[0.95] md:text-7xl">
               Alba Sierra.<br />
-              <em className="text-gradient">Full Stack</em> que convierte ideas en producto.
+              <em className="text-gradient">Full Stack & IA</em> que convierte ideas en producto.
             </h1>
             <p className="mt-6 max-w-xl text-muted-foreground">
-              Desarrollo web de principio a fin: interfaces cuidadas con HTML, CSS y JavaScript, y lógica sólida con PHP y MySQL. Certificado de Profesionalidad en Desarrollo Web.
+              Desarrollo web de principio a fin: interfaces cuidadas con HTML, CSS y JavaScript, y lógica sólida con PHP y MySQL. Desarrollo potenciado con inteligencia artificial. Certificado de Profesionalidad en Desarrollo Web.
             </p>
           </div>
           <div className="mt-8 flex flex-wrap gap-3">
@@ -81,7 +81,7 @@ function Index() {
           <div className="mb-4 flex gap-1.5"><span className="h-3 w-3 rounded-full bg-muted" /><span className="h-3 w-3 rounded-full bg-secondary" /><span className="h-3 w-3 rounded-full bg-primary" /></div>
           <pre className="whitespace-pre-wrap leading-relaxed text-muted-foreground">
 <span className="text-primary">const</span> alba = {"{"}{"\n"}
-{"  "}rol: <span className="text-accent">"Full Stack Developer"</span>,{"\n"}
+{"  "}rol: <span className="text-accent">"Full Stack & IA Developer"</span>,{"\n"}
 {"  "}foco: [<span className="text-accent">"PHP"</span>, <span className="text-accent">"MySQL"</span>, <span className="text-accent">"JavaScript"</span>],{"\n"}
 {"  "}café: <span className="text-primary">Infinity</span>,{"\n"}
 {"}"};
@@ -120,14 +120,14 @@ function Index() {
         {/* Lovable senior portfolio */}
         <a href="https://id-preview--bf6c441b-b510-4f81-864d-ca86fe0fe61f.lovable.app" target="_blank" rel="noreferrer" className="bento animate-rise group md:col-span-6 flex flex-col justify-between gap-4 md:flex-row md:items-center" style={delay(10)}>
           <div>
-            <p className="font-mono text-xs text-accent">✦ nuevo · creado con Lovable</p>
-            <h2 className="mt-2 font-display text-3xl transition group-hover:text-primary">portfolio-senior <span className="inline-block transition group-hover:translate-x-1">↗</span></h2>
-            <p className="mt-2 max-w-xl text-sm text-muted-foreground">La evolución de Albaaaaa.github.io: portfolio senior con diseño bento, animaciones y React + TypeScript.</p>
+            <p className="font-mono text-xs text-accent">✦ nuevo · programado con IA</p>
+            <h2 className="mt-2 font-display text-3xl transition group-hover:text-primary">ia-senior-portfolio <span className="inline-block transition group-hover:translate-x-1">↗</span></h2>
+            <p className="mt-2 max-w-xl text-sm text-muted-foreground">Web senior de experta en IA, la evolución de Albaaaaa.github.io: diseñada y programada con inteligencia artificial en Lovable, con React, TypeScript y desarrollo asistido por IA.</p>
             <div className="mt-3 flex flex-wrap gap-2">
-              {["React", "TypeScript", "Tailwind", "Lovable"].map((t) => <span key={t} className="font-mono text-xs text-accent">#{t}</span>)}
+              {["IA", "Lovable", "React", "TypeScript", "Prompt Engineering"].map((t) => <span key={t} className="font-mono text-xs text-accent">#{t}</span>)}
             </div>
           </div>
-          <span className="shrink-0 rounded-full bg-gradient-mint px-6 py-3 font-medium text-primary-foreground">Ver web</span>
+          <span className="shrink-0 rounded-full bg-gradient-mint px-6 py-3 font-medium text-primary-foreground">Ver web IA senior</span>
         </a>
 
         {/* Private */}
