@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 
-const GITHUB = "https://github.com/albasierra";
+const GITHUB = "https://github.com/Albaaaaa";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -17,13 +17,13 @@ export const Route = createFileRoute("/")({
 });
 
 const projects = [
-  { name: "atlas-commerce", desc: "Plataforma e‑commerce headless con pagos, inventario en tiempo real y panel de analítica.", tags: ["Next.js", "Node", "PostgreSQL"], stars: "1.2k" },
-  { name: "pulse-realtime", desc: "Motor de colaboración en tiempo real sobre WebSockets y CRDTs.", tags: ["TypeScript", "Redis", "WS"], stars: "860" },
-  { name: "nimbus-infra", desc: "Plantillas IaC para desplegar microservicios en minutos.", tags: ["Terraform", "AWS", "Docker"], stars: "540" },
-  { name: "lumen-ui", desc: "Sistema de diseño accesible con 60+ componentes.", tags: ["React", "Storybook", "a11y"], stars: "410" },
+  { name: "serprofes", desc: "Plataforma web educativa publicada en serprofes.es.", tags: ["HTML", "CSS", "PHP"], link: "https://serprofes.es" },
+  { name: "my-repo", desc: "App de citas: gestión de reservas y agenda.", tags: ["JavaScript", "PHP", "MySQL"] },
+  { name: "Base-de-datos", desc: "Diseño y gestión de bases de datos relacionales.", tags: ["MySQL", "HTML"] },
+  { name: "Albaaaaa.github.io", desc: "Mi portfolio profesional publicado en GitHub Pages.", tags: ["HTML", "CSS"] },
 ];
 
-const stack = ["TypeScript", "React", "Next.js", "Node.js", "NestJS", "PostgreSQL", "GraphQL", "Redis", "Docker", "Kubernetes", "AWS", "Terraform"];
+const stack = ["HTML5", "CSS3", "JavaScript", "PHP", "MySQL", "Git", "GitHub Pages", "Diseño responsive"];
 
 const delay = (i: number) => ({ animationDelay: `${i * 80}ms` });
 
@@ -49,30 +49,29 @@ function Index() {
               <em className="text-gradient">Full Stack</em> que convierte ideas en producto.
             </h1>
             <p className="mt-6 max-w-xl text-muted-foreground">
-              Desarrolladora senior con +8 años diseñando arquitecturas robustas, interfaces cuidadas y sistemas que escalan de cero a millones de usuarios.
+              Desarrollo web de principio a fin: interfaces cuidadas con HTML, CSS y JavaScript, y lógica sólida con PHP y MySQL. Certificado de Profesionalidad en Desarrollo Web.
             </p>
           </div>
           <div className="mt-8 flex flex-wrap gap-3">
             <a href={GITHUB} target="_blank" rel="noreferrer" className="rounded-full bg-gradient-mint px-6 py-3 font-medium text-primary-foreground shadow-[var(--shadow-glow)] transition hover:scale-105">
               Ver repositorios
             </a>
-            <a href="mailto:hola@albasierra.dev" className="rounded-full border px-6 py-3 transition hover:border-primary">
-              Contactar
+            <a href="https://serprofes.es" target="_blank" rel="noreferrer" className="rounded-full border px-6 py-3 transition hover:border-primary">
+              serprofes.es
             </a>
           </div>
         </section>
 
         {/* Stats */}
         <section className="bento animate-rise md:col-span-2" style={delay(1)}>
-          <p className="font-mono text-xs text-muted-foreground">experiencia</p>
-          <p className="font-display text-6xl text-gradient">8+</p>
-          <p className="text-sm text-muted-foreground">años en producción</p>
+          <p className="font-mono text-xs text-muted-foreground">github</p>
+          <p className="font-display text-6xl text-gradient">6</p>
+          <p className="text-sm text-muted-foreground">repositorios públicos</p>
         </section>
-        <section className="bento animate-rise md:col-span-2 grid grid-cols-2 gap-2" style={delay(2)}>
-          <div><p className="font-display text-4xl">120+</p><p className="text-xs text-muted-foreground">repositorios</p></div>
-          <div><p className="font-display text-4xl">3k</p><p className="text-xs text-muted-foreground">estrellas</p></div>
-          <div><p className="font-display text-4xl">40+</p><p className="text-xs text-muted-foreground">proyectos</p></div>
-          <div><p className="font-display text-4xl">2k</p><p className="text-xs text-muted-foreground">commits/año</p></div>
+        <section className="bento animate-rise md:col-span-2" style={delay(2)}>
+          <p className="font-mono text-xs text-muted-foreground">formación</p>
+          <p className="font-display text-3xl">Certificado de Profesionalidad</p>
+          <p className="text-sm text-muted-foreground">Desarrollo Web</p>
         </section>
 
         {/* Code */}
@@ -80,8 +79,8 @@ function Index() {
           <div className="mb-4 flex gap-1.5"><span className="h-3 w-3 rounded-full bg-muted" /><span className="h-3 w-3 rounded-full bg-secondary" /><span className="h-3 w-3 rounded-full bg-primary" /></div>
           <pre className="whitespace-pre-wrap leading-relaxed text-muted-foreground">
 <span className="text-primary">const</span> alba = {"{"}{"\n"}
-{"  "}rol: <span className="text-accent">"Senior Full Stack"</span>,{"\n"}
-{"  "}foco: [<span className="text-accent">"arquitectura"</span>, <span className="text-accent">"DX"</span>, <span className="text-accent">"rendimiento"</span>],{"\n"}
+{"  "}rol: <span className="text-accent">"Full Stack Developer"</span>,{"\n"}
+{"  "}foco: [<span className="text-accent">"PHP"</span>, <span className="text-accent">"MySQL"</span>, <span className="text-accent">"JavaScript"</span>],{"\n"}
 {"  "}café: <span className="text-primary">Infinity</span>,{"\n"}
 {"}"};
           </pre>
@@ -104,7 +103,7 @@ function Index() {
             style={delay(5 + i)}>
             <div className="flex items-start justify-between">
               <p className="font-mono text-xs text-muted-foreground">repo / {String(i + 1).padStart(2, "0")}</p>
-              <span className="font-mono text-xs text-muted-foreground">★ {p.stars}</span>
+              
             </div>
             <div className="mt-8">
               <h2 className="font-display text-3xl transition group-hover:text-primary">{p.name} <span className="inline-block transition group-hover:translate-x-1">↗</span></h2>
@@ -120,9 +119,8 @@ function Index() {
         <section className="animate-rise md:col-span-6 rounded-[var(--radius-2xl)] bg-gradient-mint p-10 text-primary-foreground" style={delay(9)}>
           <h2 className="font-display text-4xl md:text-6xl">¿Construimos algo <em>increíble</em>?</h2>
           <div className="mt-6 flex flex-wrap gap-4 font-mono text-sm">
-            <a href="mailto:hola@albasierra.dev" className="underline-offset-4 hover:underline">hola@albasierra.dev</a>
+            <a href="https://serprofes.es" target="_blank" rel="noreferrer" className="underline-offset-4 hover:underline">serprofes.es ↗</a>
             <a href={GITHUB} target="_blank" rel="noreferrer" className="underline-offset-4 hover:underline">GitHub ↗</a>
-            <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="underline-offset-4 hover:underline">LinkedIn ↗</a>
           </div>
         </section>
       </div>
